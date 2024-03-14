@@ -1,0 +1,64 @@
+/* Recipe section styles */
+.recipe-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* Adjusted to a single column layout */
+    gap: 20px;
+    padding-left: 10px;
+}
+
+.recipe {
+    display: flex;
+    align-items: center;
+    border: 1px solid #ccc;
+    padding: 10px;
+    position: relative;
+    background-color: #f9f9f9;
+}
+
+.bigger {
+    flex-basis: 70%; /* Adjust the width of the larger recipe */
+}
+
+.smaller {
+    flex-basis: 50%; /* Adjust the width of the smaller recipes */
+}
+
+.recipe img {
+    width: 100%;
+    max-width: 200px; /* Adjust the maximum width of the recipe images */
+    height: auto;
+    border-radius: 8px;
+}
+
+.recipe h3 {
+    margin-top: 0;
+}
+
+.recipe p {
+    margin-bottom: 0;
+}
+
+.recipe:nth-child(odd) {
+    flex-direction: row-reverse; /* Reverse the order of odd-numbered recipes */
+}
+
+.description,
+.details {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.details {
+    border-left: 1px solid #ccc;
+    padding-left: 10px;
+    margin-left: 10px;
+}
+
+.recipe::after {
+    content: '';
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    right: 10px;
+    bottom: 10px;
+}

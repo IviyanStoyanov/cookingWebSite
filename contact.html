@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Кулинарен портал - Контакт</title>
+    <link rel="stylesheet" href="nav.css">
+</head>
+<body>
+    <header>
+      
+        <nav>
+            <ul>
+                <li><a href="index.html">Начало</a></li>
+                <li><a href="recipes.html">Рецепти</a></li>
+                <li><a href="gallery.html">Галерия</a></li>
+                <li><a href="contact.html">Контакт</a></li>
+                <li><a href="about.html">За нас</a></li>
+            </ul>
+        </nav>
+        <h1>Контакт</h1>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Свържете се с нас</h2>
+            <p>Имате въпроси или коментари? Свържете се с нас чрез формуляра по-долу и ние ще ви отговорим възможно най-скоро.</p>
+            <form action="submit.php" method="post">
+                <label for="name">Име:</label><br>
+                <input type="text" id="name" name="name" required><br>
+                <label for="email">Имейл:</label><br>
+                <input type="email" id="email" name="email" required><br>
+                <label for="message">Съобщение:</label><br>
+                <textarea id="message" name="message" rows="4" required></textarea><br>
+                <input type="submit" value="Изпрати">
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>Кулинарен портал &copy; 2024</p>
+    </footer>
+</body>
+</html>
