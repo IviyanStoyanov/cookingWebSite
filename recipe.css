@@ -1,45 +1,31 @@
-/* Recipe section styles */
 .recipe-grid {
     display: grid;
-    grid-template-columns: 1fr; /* Adjusted to a single column layout */
+    grid-template-columns: repeat(3, 1fr);
     gap: 20px;
     padding-left: 10px;
+    background-image: url('path/to/your/background.jpg'); /* Adjust the path to your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 }
 
 .recipe {
-    display: flex;
-    align-items: center;
     border: 1px solid #ccc;
     padding: 10px;
+    text-align: center;
     position: relative;
     background-color: #f9f9f9;
 }
 
-.bigger {
-    flex-basis: 70%; /* Adjust the width of the larger recipe */
-}
-
-.smaller {
-    flex-basis: 50%; /* Adjust the width of the smaller recipes */
-}
-
 .recipe img {
-    width: 100%;
-    max-width: 200px; /* Adjust the maximum width of the recipe images */
-    height: auto;
-    border-radius: 8px;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
 }
 
 .recipe h3 {
     margin-top: 0;
-}
-
-.recipe p {
-    margin-bottom: 0;
-}
-
-.recipe:nth-child(odd) {
-    flex-direction: row-reverse; /* Reverse the order of odd-numbered recipes */
 }
 
 .description,
