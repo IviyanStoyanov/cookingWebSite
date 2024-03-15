@@ -1,0 +1,76 @@
+body {
+    background-image: url('photos/background.png'); /* Path to your background image */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px auto;
+    max-width: 800px;
+    background-color: rgba(223, 204, 255, 0.8); 
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.contact-info {
+    width: 45%;
+    padding-right: 20px;
+    border-right: 2px solid #4c00ff;
+}
+
+.contact-info h2 {
+    margin-top: 0;
+}
+
+.contact-info p {
+    margin-bottom: 10px;
+}
+
+.contact-form {
+    width: 45%;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form input[type="submit"] {
+    background-color: #a377f4;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form input[type="submit"]:hover {
+    background-color: #5900ff;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .contact-info,
+    .contact-form {
+        width: 100%;
+        border: none;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .contact-info {
+        border-bottom: 2px solid #ccc;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+    }
+}

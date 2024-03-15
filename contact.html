@@ -3,8 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Кулинарен портал - Контакт</title>
+    <title>Контакти</title>
     <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="contacts.css">
+
 </head>
 <body>
     <header>
@@ -18,24 +20,26 @@
                 <li><a href="about.html">За нас</a></li>
             </ul>
         </nav>
-        <h1>Контакт</h1>
     </header>
     
-    <main>
-        <section>
-            <h2>Свържете се с нас</h2>
-            <p>Имате въпроси или коментари? Свържете се с нас чрез формуляра по-долу и ние ще ви отговорим възможно най-скоро.</p>
-            <form action="submit.php" method="post">
-                <label for="name">Име:</label><br>
-                <input type="text" id="name" name="name" required><br>
-                <label for="email">Имейл:</label><br>
-                <input type="email" id="email" name="email" required><br>
-                <label for="message">Съобщение:</label><br>
-                <textarea id="message" name="message" rows="4" required></textarea><br>
-                <input type="submit" value="Изпрати">
+    <div class="container">
+        <div class="contact-info">
+            <h2>Контактна информация</h2>
+            <p><strong>Име:</strong> Ивиян Стоянов</p>
+            <p><strong>И-мейл:</strong> iviyanstoyanov@gmail.com</p>
+            <p><strong>Телефон:</strong> 0893611459 </p>
+            <p><strong>Адрес:</strong> yл. Хан Аспарух 2а</p>
+        </div>
+        <div class="contact-form">
+            <h2>Свържи се с нас</h2>
+            <form>
+                <input type="text" name="name" placeholder="Вашето име">
+                <input type="text" name="email" placeholder="Вашият Имеил">
+                <textarea name="message" placeholder="Въвете текст"></textarea>
+                <input type="submit" value="Изпрати съобщение">
             </form>
-        </section>
-    </main>
+        </div>
+    </div>
 
     <footer>
         <p>Кулинарен портал &copy; 2024</p>
