@@ -1,0 +1,128 @@
+body {
+    background-image: url('photos/background.png'); 
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 30px auto;
+    max-width: 800px;
+    padding: 30px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar-container {
+    position: absolute;
+    left: 650px; 
+    top: 230px;
+    width: 200px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+    background-color: rgba(223, 204, 255, 0.8); 
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.sidebar {
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 200px;
+    background-color: #f0f0f0;
+    padding: 20px;
+    float: left;
+}
+
+.content {
+    padding: 10px;
+    overflow: hidden;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    padding: 10px 0; /* Add padding to the top and bottom of each list item */
+    margin-top: 10px; /* Add margin to the top of each list item */
+    margin-bottom: 10px; /* Add margin to the bottom of each list item */
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #333;
+    display: block;
+}
+
+.about-info {
+    padding: 20px;
+    background-color: rgba(223, 204, 255, 0.8); 
+    border-radius: 10px;
+    border: 1px solid transparent; /* Remove the outer border */
+}
+
+.about-info h3 {
+    font-weight: bold;
+    margin-top: 0;
+}
+
+.about-info p {
+    margin-top: 10px;
+}
+
+/* Style for anchor links */
+.content h2[id],
+.content h3[id],
+.content h4[id],
+.content h5[id],
+.content h6[id] {
+    scroll-margin-top: 100px; /* Adjust as needed */
+}
+
+/* Header styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 32px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+footer p {
+    margin: 0;
+    font-size: 16px;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

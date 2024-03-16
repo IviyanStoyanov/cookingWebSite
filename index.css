@@ -1,0 +1,71 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f2f2f2;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 30px auto;
+    max-width: 800px;
+    background-color: rgba(223, 204, 255, 0.8); 
+    padding: 30px;
+    border-radius: 20px;
+}
+
+.main-recipe{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.small-recipes {
+    display: flex;
+    flex-direction: column; /* Display the small recipes in a column */
+    align-items: center;
+}
+
+.small-recipe {
+    margin-bottom: 20px; /* Add margin between the small recipes */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.small-recipe img {
+    border-radius: 50%; /* Make the photos circular */
+    width: 130px; /* Adjust the width of the circular images */
+    height: 130px; /* Adjust the height of the circular images */
+    margin-bottom: 10px; /* Add margin below the circular images */
+}
+
+.divider {
+    border-right: 2px solid #ccc;
+    margin: 0 20px;
+}
+
+.recipe-description {
+    text-align: center;
+}
+
+.recipe-description h2, .recipe-description h3 {
+    margin-top: 0;
+}
+
+.recipe-description p {
+    margin-bottom: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+
+.small-recipe {
+    margin: 0 10px;
+}
