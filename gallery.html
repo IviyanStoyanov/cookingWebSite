@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Кулинарен портал - Галерия</title>
     <link rel="stylesheet" href="nav.css">
+    <link rel="stylesheet" href="gallery.css">
 </head>
 <body>
     <header>
@@ -23,21 +24,25 @@
         
     </header>
     
-    <main>
-        <section>
-            <p>много снимки и ревюта на клиенти</p>
-        </section>
-        <div class="gallery">
-            <div class="image-tile small"> <img src="photos/alfredo-pasta.jpg" alt=""></div>
-            <div class="image-tile medium"><img src="photos/avocado-toast.jpg" alt=""></div>
-            <div class="image-tile large"><img src="photos/banitsa.jpg" alt=""></div>
-            <div class="image-tile small"><img src="photos/gohan-rice.jpg" alt=""></div>
-            <div class="image-tile medium"><img src="photos/greek salad.jpg" alt=""></div>
-            <div class="image-tile large"><img src="photos/tortilia.jpg" alt=""></div>
-            <div class="image-tile large"><img src="photos/vegiesWchicken.jpg" alt=""></div>
-            <!-- Add more image tiles as needed -->
+    <div class="container">
+        <div class="wrapper">
+            <div class="wrapper-holder">
+                <div id="slider-img-1"></div>
+                <div id="slider-img-2"></div>
+                <div id="slider-img-3"></div>
+                <div id="slider-img-4"></div>
+                <div id="slider-img-5"></div>
+            </div>
         </div>
-    </main>
+
+        <div class="button-holder">
+            <a href="#slider-img-1" class="button"></a>
+            <a href="#slider-img-2" class="button"></a>
+            <a href="#slider-img-3" class="button"></a>
+            <a href="#slider-img-4" class="button"></a>
+            <a href="#slider-img-5" class="button"></a>
+        </div>
+    </div>
 
     <footer>
         <p>Кулинарен портал &copy; 2024</p>
