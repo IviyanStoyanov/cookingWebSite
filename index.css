@@ -1,57 +1,70 @@
-body {
-    font-family: Helvetica, sans-serif;
-    padding: 5%;
-    text-align: center;
-    font-size: 50;
-}
- 
-/* Styling the area of the slides */
-#slideshow {
+.container {
+    height: 600px; 
+    width: 800px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    margin: 30px auto;
+    background-color: rgba(223, 204, 255, 0.8); 
+    padding: 30px;
+    border-radius: 20px;
     overflow: hidden;
-    height: 410px;
-    width: 1598px;
-    margin: 0 auto;
 }
- 
-/* Style each of the sides 
-  with a fixed width and height */
-.slide {
-    float: left;
-    height: 410;
-    width: 1598;
+
+.container h2 {
+    text-align: center; /* Center the h2 tag */
 }
- 
-/* Add animation to the slides */
-.slide-wrapper {
- 
-    /* Calculate the total width on the
-    basis of number of slides */
-    width: calc(px * 4);
- 
-    /* Specify the animation with the
-    duration and speed */
-    animation: slide 10s ease infinite;
+
+.main-recipe {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
 }
- 
-/* Define the animation 
-  for the slideshow */
-@keyframes slide {
- 
-    /* Calculate the margin-left for 
-    each of the slides */
-    20% {
-        margin-left: 0px;
-    }
- 
-    40% {
-        margin-left: calc(-1598px * 1);
-    }
- 
-    60% {
-        margin-left: calc(-1598px * 2);
-    }
- 
-    80% {
-        margin-left: calc(-1598px * 3);
-    }
+
+.small-recipes {
+    display: flex;
+    flex-direction: column; /* Display the small recipes in a column */
+    align-items: center;
+}
+
+.small-recipe {
+    margin-bottom: 20px; /* Add margin between the small recipes */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.small-recipe img {
+    border-radius: 50%; /* Make the photos circular */
+    width: 130px; /* Adjust the width of the circular images */
+    height: 130px; /* Adjust the height of the circular images */
+    margin-bottom: 10px; /* Add margin below the circular images */
+}
+
+.divider {
+    border-right: 2px solid #ccc;
+    margin: 0 20px;
+}
+
+.recipe-description {
+    text-align: center;
+}
+
+.recipe-description h2, .recipe-description h3 {
+    margin-top: 0;
+}
+
+.recipe-description p {
+    margin-bottom: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 30px;
+}
+
+.small-recipe {
+    margin: 0 10px;
 }
