@@ -1,70 +1,72 @@
-.container {
-    height: 600px; 
-    width: 800px;
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 20px;
+.container-left, .container-right {
+    height: auto;
+    width: 45%;
     margin: 30px auto;
-    background-color: rgba(223, 204, 255, 0.8); 
+    background-color: rgba(223, 204, 255, 0.8);
     padding: 30px;
     border-radius: 20px;
     overflow: hidden;
-}
-
-.container h2 {
-    text-align: center; /* Center the h2 tag */
-}
-
-.main-recipe {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
-}
-
-.small-recipes {
-    display: flex;
-    flex-direction: column; /* Display the small recipes in a column */
-    align-items: center;
-}
-
-.small-recipe {
-    margin-bottom: 20px; /* Add margin between the small recipes */
     display: flex;
     flex-direction: column;
-    align-items: center;
+    gap: 20px;
 }
 
-.small-recipe img {
-    border-radius: 50%; /* Make the photos circular */
-    width: 130px; /* Adjust the width of the circular images */
-    height: 130px; /* Adjust the height of the circular images */
-    margin-bottom: 10px; /* Add margin below the circular images */
+.container-left {
+    margin-right: 10px;
 }
 
-.divider {
-    border-right: 2px solid #ccc;
-    margin: 0 20px;
+.container-right {
+    margin-left: 10px;
 }
 
-.recipe-description {
+.container-left h2, .container-right h2 {
     text-align: center;
 }
 
-.recipe-description h2, .recipe-description h3 {
-    margin-top: 0;
+.container-left .content, .container-right .content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
 }
 
-.recipe-description p {
-    margin-bottom: 0;
-}
-
-img {
-    max-width: 100%;
+.container-left .content img {
+    max-width: 50%;
     height: auto;
-    border-radius: 30px;
+    border-radius: 20px;
+    margin-left: 10px;
 }
 
-.small-recipe {
-    margin: 0 10px;
+.container-right .content img {
+    max-width: 50%;
+    height: auto;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.container-left .content .text p {
+    margin-bottom: 10px;
+}
+
+.container-left .content ul,
+.container-right .content ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+}
+
+.container-left .content ul li,
+.container-right .content ul li {
+    font-size: 18px; /* Increase font size */
+    line-height: 1.5; /* Adjust line height for better readability */
+    margin-bottom: 10px; /* Add space below each list item */
+    padding-left: 20px; /* Add space to the left */
+}
+
+.container-left .content ul li::before,
+.container-right .content ul li::before {
+    content: "•"; /* Use a bullet point as list item marker */
+    color: #333; /* Set bullet point color */
+    display: inline-block; /* Ensure bullet points are inline with text */
+    width: 10px; /* Adjust spacing between bullet point and text */
+    margin-left: -20px; /* Move bullet point to the left */
 }
